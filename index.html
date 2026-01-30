@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Médica</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+<body>
+
+<header class="header" id="header">
+  <div class="container header-container">
+  <div class="logo">CLÍNICA+</div>
+
+  <nav class="menu-desktop">
+    <a href="#inicio">INICIO</a>
+    <a href="#sobre">SOBRE</a>
+    <a href="#departamentos">DEPARTAMENTOS</a>
+    <a href="#medicos">MÉDICOS</a>
+    <a href="#contato">CONTATO</a>
+  </nav>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<!-- MENU LATERAL MOBILE -->
+<aside id="menu-lateral">
+  <a href="#inicio" onclick="toggleMenu()">Início</a>
+  <a href="#sobre" onclick="toggleMenu()">Sobre</a>
+  <a href="#departamentos" onclick="toggleMenu()">Departamentos</a>
+  <a href="#medicos" onclick="toggleMenu()">Médicos</a>
+  <a href="#contato" onclick="toggleMenu()">Contato</a>
+</aside>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+    <div class="container hero-content">
+       <div class="hero-text">
+
+        <h1>Oferecemos o melhor cuidado com a sua saúde</h1>
+        <p>Atendimento humanizado, profissionais qualificados e tecnologia de ponta.</p>
+        <button>Saiba mais</button>
+      </div>
+
+  
+</section>
+
+<!-- DEPARTAMENTOS -->
+<section id="departamentos" class="departamentos">
+  <h2>NOSSOS DEPARTAMENTOS</h2>
+
+    <div class="container departamentos-grid">
+    <div class="card">
+        <i class="ri-heart-pulse-line"></i>
+        <h3>Cardiologia</h3></div>
+    <div class="card">
+        <i class="ri-survey-line"></i>
+        <h3>Diagnóstico</h3></div>
+    <div class="card">
+        <i class="ri-syringe-line"></i>
+        <h3>Cirurgia</h3></div>
+    <div class="card">
+        <i class="ri-first-aid-kit-line"></i>
+        <h3>Primeiros Socorros</h3></div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+    <div class="container">
+        <div class="sobre-imagem">
+  <img src="https://media.istockphoto.com/id/2187597308/pt/foto/smiling-doctor-holding-heart-shape-stethoscope-at-hospital.webp?a=1&b=1&s=612x612&w=0&k=20&c=EgF3R4bFsIZsH3_lY-PvohszfTCputwEE9ikVf1XxFI=" alt="Sobre a clínica">
+</div>
+    <div class="sobre-texto">
+    <h2>SOBRE NÓS</h2>
+    <p>Somos uma clínica especializada em oferecer atendimento médico completo, com foco no bem-estar e na segurança dos pacientes.</p>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- MÉDICOS -->
+<section class="medicos" id="medicos">
+  <div class="container">
+  <h2>NOSSOS MÉDICOS</h2>
+  <p class="subtitulo">Profissionais qualificados prontos para cuidar da sua saude</p>
+   
+  <div class="grid">
+
+    <div class="medicos-card">
+      <div class="medico-img">
+        <img src="https://media.istockphoto.com/id/2231686164/pt/foto/female-doctor-smiling-and-holding-digital-tablet-in-hospital.webp?a=1&b=1&s=612x612&w=0&k=20&c=KG8sZRwexJNJoh3D3JQaawRBEXafE59H1lNvDdpy84c=">
+      </div>
+         <div class="medico-info">
+           <h3>Dra. Elisa Silva</h3>
+           <span>Cardiologista</span>
+         </div>
+    </div>
+
+    <div class="medicos-card">
+        <div class="medico-img">
+          <img src="https://media.istockphoto.com/id/2205091219/pt/foto/portrait-of-smiling-doctor-with-folded-arms-and-stethoscope.webp?a=1&b=1&s=612x612&w=0&k=20&c=2_3cylz5qgW-dChHjb-xoByjTCOgmC-IfiQi-ztCDRo=">
+        </div>
+           <div class="medico-info">
+             <h3>Dr. Adam Vieira</h3>
+             <span>Neurologista</span>
+           </div>
+    </div>
+
+    <div class="medicos-card">
+        <div class="medico-img">
+           <img src="https://media.istockphoto.com/id/2207618864/pt/foto/portrait-of-male-medical-professional-in-lab-coat-with-hands-in-pockets-standing-on-white.webp?a=1&b=1&s=612x612&w=0&k=20&c=14MtkpQllUVfV6MquGq2c_uB_1turK9frqFoc_K5JgM=">
+        </div>
+          <div class="medico-info">
+             <h3>Dra. Mia Costa</h3>
+             <span>Pediatra</span>
+          </div>
+     </div> 
+  </div>
+</div>
+</section>
+
+<!-- MAPA -->
+<section id="contato" class="mapa">
+  <div class="container">
+    
+  <iframe src="https://www.google.com/maps?q=São%20Paulo&output=embed"></iframe>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    
+  <p>© 2026 Clínica Médica - Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
