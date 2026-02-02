@@ -1,7 +1,7 @@
 :root {
   --container-width: 1200px;
   --container-padding: 24px;
-  --header-height: 70px
+  --header-height: 120px
 }
 
 .container {
@@ -29,33 +29,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
 body {
     scroll-behavior: smooth;
     font-family: 'SN Pro', sans-serif;
     font-size: 16px;
 
-}
-h1, h2, h3 {
-  font-weight: 600;
-  font-family: 'SN Pro', sans-serif;
-}
-
-h4, h5 {
-  font-weight: 500;
-}
-
-p, li, span {
-  font-weight: 400;
-}
-
-button, a {
-  font-weight: 500;
-}
-nav a {
-  font-size: 15px;
-  font-weight: 500;
 }
 
 .card {
@@ -106,6 +85,9 @@ nav a {
   color: white;
   margin-left: 20px;
   text-decoration: none;
+  font-family: 'SN Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .menu-toggle {
@@ -134,6 +116,8 @@ nav a {
   margin-bottom: 20px;
   text-decoration: none;
   font-size: 18px;
+  font-family: 'SN Pro', sans-serif;
+  font-weight: 200;
 }
 
 /* HERO */
@@ -173,6 +157,7 @@ nav a {
   font-size: 16px;
   margin: 20px 0;
   opacity: 0.9;
+  margin-bottom: 30px;
   
 }
 .hero-text a {
@@ -183,8 +168,8 @@ nav a {
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 10px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 400;
 }
 
 
@@ -207,21 +192,23 @@ nav a {
   }
   .departamentos h2 {
    text-align: center;
-   font-size: 32px;
+   font-size: 35px;
+   font-weight: 500;
    margin-bottom: 32px;
 }
 .departamentos h3 {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     letter-spacing: 1px;
-    text-transform: uppercase;
     color: #111;
     margin-bottom: 12px;
 }
 .departamentos p {
-    font-size: 15px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 350;
     line-height: 1.6;
-    color: #555;
+    color: #111;
 }
 
 .card {
@@ -275,7 +262,8 @@ nav a {
     text-align: left;
 }
 .sobre-texto p {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 350;
     line-height: 1.6;
     text-align: left;
     margin-bottom: 20px;
@@ -289,7 +277,12 @@ nav a {
 }
 .medicos h2 {
     font-size: 32px;
+    font-weight: 600;
     margin-bottom: 10px;
+}
+.medicos p {
+  font-size: 18px;
+  font-weight: 350;
 }
 .medicos .subtitulo {
     max-width: 500px;
@@ -308,15 +301,15 @@ nav a {
     padding: 0;
 }
 .medico-img {
-    height: 300px;
+    height: 350px;
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .medico-img img {
-    max-width: 500px;
-    max-height: 100%;
+    max-width: 100%;
+    max-height: 200%;
     object-fit: contain;
 }
 
@@ -341,29 +334,120 @@ nav a {
   border-radius: 10px;
 }
 
-/* FOOTER */
 .footer {
   background: #1f8f7a;
-  color: white;
-  padding: 20px;
+  color: #fff;
+  padding: 60px 20px 20px;
 }
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
-.footer p {
-  margin: 0;
+
+.footer-col h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
 }
-.footer a {
-  color: white;
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-weight: 350;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #fff;
   text-decoration: none;
-  margin-left: 15px;
+  font-size: 14px;
 }
-.footer a:hover {
+
+.footer-col ul li a:hover {
   text-decoration: underline;
 }
+
+/* Social icons */
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  background: rgba(255,255,255,0.2);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter input {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.newsletter button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #b9ece8;
+  color: #000;
+  cursor: pointer;
+  font-weight: 350;
+}
+
+.newsletter button:hover {
+  background: #a1ded9;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  font-weight: 350;
+  opacity: 0.8;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* RESPONSIVO */
 @media (max-width: 800px) {
@@ -395,7 +479,8 @@ nav a {
     color: #0f3d3e;
   }
   .logo {
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: 300;
   }
   .hero {
     min-height: 70vh;
@@ -421,9 +506,11 @@ nav a {
   .hero-text h1 {
     font-size: 40px;
     line-height: 1.25;
+    margin-bottom: 30px;
   }
   .hero-text p {
     font-size: 20px;
+    margin-bottom: 50px;
   }
   .hero-text button {
     width: auto;
@@ -449,7 +536,7 @@ nav a {
   }
   .departamentos .card {
     width: 100%;
-    max-width: 200px;
+    max-width: 500px;
     margin: 0 auto;
     text-align: center;
   }
@@ -460,8 +547,12 @@ nav a {
   .sobre-imagem img {
     max-width: 100%;
   }
-  .sobre-texto h2,.sobre-texto p {
+  .sobre-texto h2 {
     text-align: center;
+  }
+  .sobre-texto p {
+    text-align: center;
+    font-weight: 350;
   }
   /*====MÉDICOS====*/
   .medicos .grid {
@@ -475,6 +566,7 @@ nav a {
     max-width: 500px;
     object-fit: contain;
   }
+  
   /*====FOOTER====*/
   .footer .container {
     flex-direction: column;
