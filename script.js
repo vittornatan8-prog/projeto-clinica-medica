@@ -24,6 +24,3 @@ function toggleMenu() {
 
     lastScroll = currentScroll;
   });
-
-
-
