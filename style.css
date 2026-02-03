@@ -77,8 +77,8 @@ body {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 30px;
 }
 
 .menu-desktop a {
@@ -355,11 +355,14 @@ body {
 }
 
 .footer-col p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 10px;
   font-weight: 350;
 }
+.footer-col p i {
+  margin-right: 8px;
+} 
 
 .footer-col ul {
   list-style: none;
@@ -373,7 +376,8 @@ body {
 .footer-col ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 350;
 }
 
 .footer-col ul li a:hover {
@@ -388,14 +392,14 @@ body {
 }
 
 .social-icons a {
-  background: rgba(255,255,255,0.2);
-  width: 35px;
-  height: 35px;
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -416,10 +420,11 @@ body {
   padding: 12px;
   border: none;
   border-radius: 5px;
-  background: #b9ece8;
+  background: #a1ded9;
   color: #000;
   cursor: pointer;
-  font-weight: 350;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .newsletter button:hover {
@@ -430,7 +435,7 @@ body {
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 350;
   opacity: 0.8;
 }
@@ -560,20 +565,14 @@ body {
   }
   .medico-img {
     height: auto;
-    padding: 20px;
+    padding: 0px;
   }
   .medico-img img {
-    max-width: 500px;
+    width: 100%;
     object-fit: contain;
   }
   
-  /*====FOOTER====*/
-  .footer .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-  
+ 
   /*====MAPA====*/
   .mapa iframe {
     height: 280px;
@@ -588,5 +587,18 @@ body {
     gap: 20px;
   }
   
+  /* 📱 Responsivo */
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
   
 }
