@@ -24,3 +24,29 @@ function toggleMenu() {
 
     lastScroll = currentScroll;
   });
+
+  
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    // no topo
+    if (currentScroll <= 50) {
+      header.classList.remove("show");
+      header.classList.remove("hide");
+      return;
+    }
+
+    // rolando para baixo
+    if (currentScroll > lastScroll) {
+      header.classList.add("hide");
+      header.classList.remove("show");
+    } 
+    // rolando para cima
+    else {
+      header.classList.add("show");
+      header.classList.remove("hide");
+    }
+
+    lastScroll = currentScroll;
+  });
+
